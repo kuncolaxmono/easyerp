@@ -1,7 +1,7 @@
 <div class="container" style="margin-top:30px">
 <div class="col-md-4 col-md-offset-4">
 <div class="panel panel-default">
-<div class="panel-heading"><h3 class="panel-title"><strong>Login </strong></h3>
+<div class="panel-heading"><h3 class="panel-title"><strong>Login EasyERP</strong></h3>
 </div>
 
 <div class="panel-body">

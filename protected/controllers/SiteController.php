@@ -3,7 +3,7 @@ class SiteController extends LoginTheme {
 
     public function actionIndex() {
         if(empty(Yii::app()->session['userid'])){
-            $this->pageTitle = 'Easy ERP';
+            $this->pageTitle = 'Login Easy ERP';
             $model = new LoginForm;
             if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
                 echo CActiveForm::validate($model);

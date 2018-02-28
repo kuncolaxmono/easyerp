@@ -49,19 +49,17 @@
 </html>
 
 <script>
-    function addPanel(title, url) {
-        if ($('#tt').tabs('exists', title)) {
-            $('#tt').tabs('select', title);
-        } else {
-            $('#tt').tabs('add',
-                    {
-                        title: title,
-                        content: '<iframe scrolling=\"yes\" frameborder=\"0\"  src="' + url + '" style=\"width:100%;height:100%;\"></iframe>',
-                        closable: true,
-                        cache: false
-                    }
-            );
-
+function addPanel(title, url) {
+    if ($('#tt').tabs('exists', title)) {
+        $('#tt').tabs('select', title);
+    } else {
+        $('#tt').tabs('add',{
+            title: title,
+            content: '<iframe scrolling=\"yes\" frameborder=\"0\"  src="' + url + '" style=\"width:100%;height:100%;\"></iframe>',
+            closable: true,
+            cache: false
         }
+        );
     }
+}
 </script>
