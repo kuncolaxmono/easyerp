@@ -15,7 +15,7 @@ class SiteController extends LoginTheme {
                     $this->redirect(array('cpanel/index'));
                 }
             }
-            $this->render('index', array('model' => $model, $this->setTheme()));            
+            $this->render('index', array('model' => $model, $this->setTheme()));
         } 
         else {
             $this->redirect(array('cpanel/index'));
@@ -26,15 +26,15 @@ class SiteController extends LoginTheme {
         $this->redirect(array('site/index'));
     }
     
-	public function actionTest(){
-		//echo "tessss";
-		$this->renderPartial('test', array('title'=>'Test', $this->setTheme()));    
-	}
-	
-	public function actionTest1(){
-		//echo "tessss";
-		$this->renderPartial('test1', array('title'=>'Tes1', $this->setTheme()));    
-	}
+    public function actionTest(){
+        $this->pageTitle="Test";  
+        $this->render('test', array($this->setTheme()));   
+    }
+
+    public function actionTest1(){
+        $this->pageTitle="Test1";
+        $this->render('test1', array($this->setTheme()));   
+    }
 	
     public function actionLogout() {
         Yii::app()->user->logout();
